@@ -1,4 +1,7 @@
 # 這是一個範例 Python 腳本。
+from Scores.GradeManagementSystem import GradeManagementSystem
+
+import Elevator.elevator as elevator
 
 # 按 Shift+F10 執行或將其取代為您的程式碼。
 # 按 雙擊 Shift 在所有地方搜尋類別、檔案、工具視窗、動作和設定。
@@ -13,4 +16,23 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
 
-# 存取 https://www.jetbrains.com/help/pycharm/ 獲取 PyCharm 幫助
+    # 存取 https://www.jetbrains.com/help/pycharm/ 獲取 PyCharm 幫助
+
+
+
+
+    elevator.run_test(3, 1, [(5, 12), (10, 12), (3, 12), (7, 11)])
+
+    # 測試資料 4.4
+    elevator.run_test(4, 10, [(5, 12), (10, 12), (3, 11), (7, 11)])
+
+    # 測試資料 4.5
+    elevator.run_test(5, 4, [(5, 12), (10, 12), (3, 12), (7, 11)])
+
+    # 測試資料 4.6
+    elevator.run_test(6, 1, [(5, 12), (10, 12), (8, 12), (7, 11)])
+
+
+
+    system = GradeManagementSystem()
+    system.run()
